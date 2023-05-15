@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   call-workflow-2-in-local-repo:
-    uses: haribabubavanari/childtemplates/.github/workflows/build.yml@main
+    uses: haribabubavanari/childtemplates/.github/workflows/buildTasks/build.yml@main
     with:
       text: "This is the text one time"
 
