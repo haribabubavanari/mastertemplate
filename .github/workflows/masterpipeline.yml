@@ -1,1 +1,16 @@
+name: Main Workflow
 
+on:
+  push:
+    branches:
+      - main
+jobs:
+  call-workflow-2-in-local-repo:
+    uses: haribabubavanari/childtemplates/.github/workflows/build.yml@main
+    with:
+      text: "This is the text one time"
+
+  call-workflow-3-in-local-repo:
+    uses: haribabubavanari/childtemplates/.github/workflows/build.yml@main
+    with:
+      text: "This is the text two time"
